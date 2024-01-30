@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config'
 import vue from '@astrojs/vue'
 import tailwind from '@astrojs/tailwind'
-import react from '@astrojs/react'
-import preact from '@astrojs/preact'
+// import react from '@astrojs/react'
+// import preact from '@astrojs/preact'
 import svelte from '@astrojs/svelte'
 import mdx from '@astrojs/mdx'
 
@@ -26,7 +26,7 @@ export default defineConfig({
       liveDesigner: {
         iconPreferredCase: 'unocss',
         // default value (can be removed), unocss by default uses the unocss format for icon names
-        devtoolsKey: 'devtools', // see app.ts
+        devtoolsKey: 'devtoolsKey', // see app.ts
         // see app.ts
         tailwindcss: {
           configPath: 'tailwind.config.ts',
@@ -48,8 +48,8 @@ export default defineConfig({
       // Useful if you need to define and/or import your own custom `base.css`.
       applyBaseStyles: false,
     }),
-    react(),
-    preact(),
+    // react(),
+    // preact(),
     svelte(),
     Unocss({
       presets: [
