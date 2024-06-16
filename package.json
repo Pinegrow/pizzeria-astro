@@ -2,7 +2,7 @@
   "name": "pizzeria-astro",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://pg-pizzeria-astro.netlify.app/",
+  "homepage": "https://pizzeria-astro.netlify.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/pinegrow/pizzeria-astro.git"
