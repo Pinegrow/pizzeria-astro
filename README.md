@@ -9,13 +9,13 @@ This is a sample project created using:
 - Source HTML page - https://library.pinegrow.com/tailwind/templates/yummypizza_tw/
 - Starter Template - [Vue Designer Astro Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-astro-tailwindcss-custom) (see next section for its Readme)
 
-Final Output Demo - https://pg-pizzeria-astro.netlify.app/
+Final Output Demo - https://pizzeria-astro.netlify.app/
 
 # Vue Designer Astro Tailwind CSS - Quick start template
 
 This is a starter template that pre-includes the [Pinegrow Astro Module](https://www.npmjs.com/package/@pinegrow/astro-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-Demo - https://wondrous-malabi-04e0bd.netlify.app//
+Demo - https://pg-astro-tailwindcss.netlify.app
 
 ## Vue Designer
 
