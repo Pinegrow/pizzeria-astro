@@ -1,6 +1,6 @@
 # Pizzeria with Astro
 
-This repository was live-designed with Vue Designer by following the free YouTube course "**Pizzeria Static HTML into Vue Islands with 🏝 Iles, Vitepress & Astro**", which is part of the "**Learn With Vue Designer**" series. Check it out [here](https://docs.pinegrow.com/docs/vue/tutorials-courses/).
+This repository was live-designed with Vue Designer by following the free YouTube course "**Pizzeria Static HTML into Vue Islands with 🏝 Iles, Vitepress & Astro**", which is part of the "**Learn With Vue Designer**" series. Check it out [here](https://pinegrow.com/docs/vue/tutorials-courses/).
 
 "**Pizzeria**" is a simple MPA-SSG for a pizza shop that displays a list of pizzas in its store and allows users to add the pizzas to a cart. The cart is maintained in a `cart` composable and displays the cart size on a floating cart button.
 
@@ -119,10 +119,9 @@ Check out the [deployment documentation](https://docs.astro.build/en/guides/depl
 
 ### Devtools
 
+- [Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
 - [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in `app.ts` (only during development).
   - **ACTION REQUIRED**: Currently deactivated. In `app.ts`, uncomment the top devtools related snippet to activate.
-  - ~~[Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.~~
-  - ~~**ACTION REQUIRED**: Currently deactivated. In `astro.config.mjs`, uncomment VueDevtools.~~
 
 ### VS Code Extensions
 

@@ -5,6 +5,7 @@
   import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
 
   import type { Script } from '@unhead/schema'
+
   type TurboScript = Script & { once: true }
 
   const { title, description } = site

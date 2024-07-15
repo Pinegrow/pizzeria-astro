@@ -12,7 +12,7 @@ import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/astro'
 import Unocss from 'unocss/astro'
 import presetIcons from '@unocss/preset-icons'
-// import VueDevTools from 'vite-plugin-vue-devtools'
+import VueDevTools from 'vite-plugin-vue-devtools'
 // import myAstroModule from './src/modules/my-module'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
@@ -39,7 +39,7 @@ export default defineConfig({
         //     name: 'My Awesome Lib 3.0',
         //     key: 'my-awesome-lib',
         //     pluginPath: fileURLToPath(
-        //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+        //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
         //     ),
         //   },
         // ],
@@ -112,7 +112,9 @@ export default defineConfig({
 
         dts: 'components.d.ts',
       }),
-      // VueDevTools()
+      VueDevTools({
+        appendTo: 'app.ts',
+      }),
     ],
 
     // build: {
