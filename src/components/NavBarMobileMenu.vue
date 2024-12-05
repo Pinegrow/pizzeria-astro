@@ -1,14 +1,14 @@
 <script setup lang="ts">
   import { useMobileMenu } from '../composables/mobile-menu'
   const { isMobileMenuOpen } = useMobileMenu()
-  import { useNav } from '@/composables/nav'
-  const { currentLocation } = useNav()
+  import { useNavMenu } from '@/composables/nav-menu'
+  const { currentLocation } = useNavMenu()
 
   defineProps({
     navlinks: {
       type: Object,
       default() {
-        return []
+        return {}
       },
     },
   })
