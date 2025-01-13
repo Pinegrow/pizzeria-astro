@@ -1,13 +1,14 @@
 <script setup lang="ts">
-  import { useNavMenu } from '@/composables/nav-menu'
-  const { currentLocation } = useNavMenu()
-
   defineProps({
-    navlinks: {
-      type: Object,
+    navs: {
+      type: Array,
       default() {
-        return {}
+        return []
       },
+    },
+    currentPath: {
+      type: String,
+      default: '/',
     },
   })
 </script>
@@ -15,12 +16,12 @@
   <div class="h-full items-center">
     <div class="flex h-full space-x-2">
       <BaseButton
-        v-for="(navlink, index) in navlinks"
+        v-for="(nav, index) in navs"
         :key="index"
-        :to="navlink.link"
-        :label="navlink.text"
+        :to="nav.to"
+        :label="nav.title"
         size="lg"
-        :variant="navlink.link === currentLocation.pathname ? 'solid' : 'ghost'"
+        :variant="nav.to === currentPath ? 'solid' : 'ghost'"
         class="!rounded-lg"
       >
       </BaseButton>
@@ -33,8 +34,7 @@
       icon="i-mdi-pine-tree"
       color="secondary"
       trailing
-    >
-      <span class="pl-2">Try Now</span>
+      ><span class="pl-2">Try Now</span>
     </BaseButton>
   </div>
 </template>

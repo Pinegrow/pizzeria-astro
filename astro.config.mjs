@@ -17,8 +17,12 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
+import siteMeta from './src/site'
+const { url } = siteMeta
+
 // https://astro.build/config
 export default defineConfig({
+  site: url,
   integrations: [
     // myAstroModule,
     vue({
@@ -28,8 +32,6 @@ export default defineConfig({
       liveDesigner: {
         iconPreferredCase: 'unocss',
         // default value (can be removed), unocss by default uses the unocss format for icon names
-        devtoolsKey: 'devtoolsKey', // see app.ts
-        // see app.ts
         tailwindcss: {
           configPath: 'tailwind.config.ts',
           cssPath: '@/assets/css/tailwind.css',
@@ -75,7 +77,6 @@ export default defineConfig({
         // 'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
-        '@vueuse/head',
         '@vueuse/core',
         'pinia',
       ],
